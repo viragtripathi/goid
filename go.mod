@@ -1,3 +1,3 @@
-module github.com/petermattis/goid
+module github.com/viragtripathi/goid
 
 go 1.17
