@@ -1,0 +1,25 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "goid",
+    srcs = [
+        "goid.go",
+        "goid_go1.3.go",
+        "goid_go1.4.go",
+        "goid_go1.4.s",
+        "goid_go1.5.go",
+        "goid_go1.5.s",
+        "goid_slow.go",
+        "runtime_go1.5.go",
+        "runtime_go1.6.go",
+        "runtime_go1.9.go",
+    ],
+    importpath = "github.com/viragtripathi/goid",
+    visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "goid_test",
+    srcs = ["goid_test.go"],
+    embed = [":goid"],
+)
