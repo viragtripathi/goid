@@ -14,7 +14,7 @@ go_library(
         "runtime_go1.6.go",
         "runtime_go1.9.go",
     ],
-    importpath = "github.com/viragtripathi/goid",
+    importpath = "github.com/petermattis/goid",
     visibility = ["//visibility:public"],
 )
 
